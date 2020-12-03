@@ -1,0 +1,12 @@
+main {
+    height: 100vh;
+}
+
+#room {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    border-top: 3px solid red;
+    border-bottom: 4px solid red;
+    word-wrap: break-word;
+}

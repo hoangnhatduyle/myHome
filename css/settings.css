@@ -1,0 +1,55 @@
+main {
+    height: 100vh;
+}
+
+@media (max-width: 992px) {
+    .settings-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 991px) {
+    .settings-section {
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    .settings-section {
+        margin-top: 0;
+    }
+}
+
+#settings {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    overflow-y: scroll;
+    border-top: 3px solid red;
+    border-bottom: 4px solid red;
+    word-wrap: break-word;
+}
+
+.settings-heading {
+    width: 90%;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #808B96;
+}
+
+@media (max-width: 576px) {
+    .edit-btn {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    .edit-btn {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="title icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>myHOME - Contact</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="overlay" onclick="closeNav()"></div>
+        <nav id="vertical">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <div class="bottom-border py-3 mb-4 d-flex justify-content-center align-items-center">
+                            <img id="profile-photo" src="assets/images/logo.png" class="mr-3">
+                            <a href="index.html" class="navbar-brand text-white text-center"
+                                style="font-weight: 600; font-size: 25px;">myH<span style="color: red;">O</span>ME</a>
+                        </div>
+                        <div class="bottom-border pb-3">
+                            <img id="profile-photo" src="assets/images/profile.png" width="50"
+                                class="rounded-circle mr-3">
+                            <a href="#" class="text-white">Nhật Duy</a>
+                        </div>
+                        <ul class="navbar-nav bottom-border flex-column mt-4">
+                            <li class="nav-item"><a href="index.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+                            <li class="nav-item"><a href="profile.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
+                            <li class="nav-item"><a href="room.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-door-closed text-light fa-lg mr-3"></i>My Room</a></li>
+                            <li class="nav-item"><a href="document.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-file-alt text-light fa-lg mr-3"></i>Document</a></li>
+                            <li class="nav-item"><a href="settings.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link current"><i
+                                        class="fas fa-phone text-light fa-lg mr-3"></i>Contact Me</a></li>
+                        </ul>
+                        <div class="py-4">
+                            <div class="text-center">
+                                <p class="text-center text-white pb-2 mb-0">This website is still in development.</p>
+                                <p class="text-center text-white py-2 mb-0">&copy; 2020 Copyright <br> - <br><a
+                                        href="https://hoangnhatduyle.github.io/portfolio/" target="_blank"
+                                        style="text-decoration: none;">Hoang Nhat Duy Le</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of sidebar -->
+                </div>
+            </div>
+        </nav>
+
+        <nav id="horizontal">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h4 class="text-light text-uppercase px-3 mb-0">Contact</h4>
+                </div>
+                <div class="col-lg-4">
+                    <form>
+                        <div class="input-group px-3">
+                            <input type="text" class="form-control search-input mr-4" placeholder="Search...">
+                            <button type="button" class="btn btn-white search-button"><i
+                                    class="fas fa-search text-danger"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div id="info-col" class="col-lg-4 px-4">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item mr-2"><button class="button-nav" onclick="openNav()">Menu</button>
+                        </li>
+                        <li class="nav-item mr-2"><button class="button-nav">About</button>
+                        </li>
+                        <li class="nav-item mr-2"><button class="button-nav">Version</button>
+                        </li>
+                        <li class="nav-item d-flex align-items-center ml-auto"><a href="#" class="nav-link"
+                                data-toggle="modal" data-target="#sign-out"><i
+                                    class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="hide">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 sidebar">
+                        <div class="bottom-border py-3 mb-4 d-flex justify-content-center align-items-center">
+                            <a href="index.html" class="navbar-brand text-white text-center m-0"
+                                style="font-weight: 600; font-size: 25px;">myH<span style="color: red;">O</span>ME</a>
+                        </div>
+                        <div class="bottom-border pb-3">
+                            <img id="profile-photo" src="assets/images/profile.png" width="50"
+                                class="rounded-circle mr-3">
+                            <a href="#" class="text-white">Nhật Duy</a>
+                        </div>
+                        <ul class="navbar-nav bottom-border flex-column mt-4">
+                            <li class="nav-item"><a href="index.html" class="nav-link text-white p-3 mb-2"><i
+                                        class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+                            <li class="nav-item"><a href="profile.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
+                            <li class="nav-item"><a href="room.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-door-closed text-light fa-lg mr-3"></i>My Room</a></li>
+                            <li class="nav-item"><a href="document.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-file-alt text-light fa-lg mr-3"></i>Document</a></li>
+                            <li class="nav-item"><a href="settings.html"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link"><i
+                                        class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
+                            <li class="nav-item"><a href="#"
+                                    class="nav-link text-white p-3 mb-2 sidebar-link current"><i
+                                        class="fas fa-phone text-light fa-lg mr-3"></i>Contact Me</a></li>
+                        </ul>
+                        <div class="py-4">
+                            <div class="text-center">
+                                <p class="text-center text-white pb-2 mb-0">This website is still in development.</p>
+                                <p class="text-center text-white py-2 mb-0">&copy; 2020 Copyright <br> - <br><a
+                                        href="https://hoangnhatduyle.github.io/portfolio/" target="_blank"
+                                        style="text-decoration: none;">Hoang Nhat Duy Le</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of sidebar -->
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- top-nav -->
+            <div class="fixed-top py-2 top-navbar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <h4 class="text-light text-uppercase mb-0">Contact</h4>
+                        </div>
+                        <div class="col-lg-5 px-3">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control search-input mr-4" placeholder="Search...">
+                                    <button type="button" class="btn btn-white search-button"><i
+                                            class="fas fa-search text-danger"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="info-col" class="col-lg-4">
+                            <ul class="navbar-nav flex-row">
+                                <li class="nav-item mr-2"><button class="button-nav">About</button>
+                                </li>
+                                <li class="nav-item mr-2"><button class="button-nav">Version</button>
+                                </li>
+                                <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link"
+                                        data-toggle="modal" data-target="#sign-out"><i
+                                            class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of top-nav -->
+
+            <section id="contact" class="d-flex align-items-center">
+                <div class="container-fluid">
+                    <div class="row contact-section">
+                        <div class="col contact-info">
+                            <p class="d-none"><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                    </svg></a><br>linkedin.com/in/hoangnhatduyle</p>
+                            <p><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                    </svg></a><br>linkedin.com/in/hoangnhatduyle</p>
+                            <p><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
+                                    </svg></a><br>419 - 699 - 9535</p>
+                            <p><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z" />
+                                    </svg></a><br>lehoangnhatduy2000@gmail.com</p>
+                            <p><a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                                    </svg>
+                                    </svg></a><br>Lê Hoàng Nhật Duy</p>
+                        </div>
+                        <div class="col contact-form mb-4">
+                            <h4>Contact Me</h4>
+                            <form method="post">
+                                <input type="text" name="name" class="text-box" placeholder="Your Name" id="name"
+                                    required />
+                                <input type="text" name="room" class="text-box" placeholder="Your Room" id="room" />
+                                <textarea name="message" rows="2" placeholder="Your Message" id="myText"
+                                    required></textarea>
+                                <div class="container-fluid">
+                                    <div class="row justify-content-end">
+                                        <!--alert messages start-->
+                                        <div id="success" class="col-lg-9 col-md-8 col-xs-8 pr-3">
+                                            <span id="sucess">Message Sent! Thank you for contacting.</span>
+                                        </div>
+                                        <div id="error" class="col-lg-9 col-md-8 col-xs-8 pr-3">
+                                            <span>Please fill in all blanks.</span>
+                                        </div>
+                                        <div id="failure" class="col-lg-9 col-md-8 col-xs-8 pr-3">
+                                            <span>I apologize that there was an error sending this message. Please send
+                                                me a direct email.</span>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-xs-2"></div>
+                                        <!--alert messages end-->
+                                        <input type="button" class="col-lg-2 col-md-2 col-xs-2 send-btn" value="Send"
+                                            onclick="sendEmail(event)" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/action.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

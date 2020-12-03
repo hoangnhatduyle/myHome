@@ -1,0 +1,19 @@
+main {
+    height: 100vh;
+}
+
+#document {
+    border-top: 3px solid #FF0000;
+    height: 100%;
+    width: 100%;
+}
+
+#document-container {
+    height: 100%;
+    width: 100%;
+}
+
+#download {
+    font-size: 20px;
+    padding: 10px 0;
+}
