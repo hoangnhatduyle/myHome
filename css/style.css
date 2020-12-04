@@ -115,6 +115,7 @@ body {
     border-radius: 50%;
     padding: 10px 16px;
     transition: all .4s;
+    background-color: #eee;
   }
   
   .search-button:hover {
@@ -138,13 +139,14 @@ body {
   }
   
   .button-nav {
-	padding: 5px 15px;
-    font-weight: 600;
-    border-radius: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
+      padding: 5px 15px;
+      font-weight: 600;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
 
   .button-nav:hover {
       background-color: #dc3545;
