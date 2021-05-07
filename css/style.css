@@ -168,7 +168,6 @@ body {
 
 /*rating starts*/
 .rate {
-  float: left;
   height: 46px;
   padding: 0 10px;
 }
