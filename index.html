@@ -16,7 +16,7 @@
     <title>Dashboard</title>
 </head>
 
-<body onload="initClock()">
+<body>
 
     <div class="wrapper">
         <div id="overlay" onclick="closeNav()"></div>
@@ -639,7 +639,12 @@
         </main>
     </div>
 
-    <script src="js/action.js"></script>
+    <script src="js/action.js" type="text/javascript"></script>
+    <script>
+        window.onload = function () {
+            initClock();
+        }
+    </script>
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
