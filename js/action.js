@@ -112,3 +112,31 @@ function sendEmail(event) {
         });
     }
 }
+
+window.onload = function () {
+
+    var radio1 = document.getElementById('star1');
+    var radio2 = document.getElementById('star2');
+    var radio3 = document.getElementById('star3');
+    var radio4 = document.getElementById('star4');
+    var radio5 = document.getElementById('star5');
+
+    radio1.onclick = check;
+    radio2.onclick = check;
+    radio3.onclick = check;
+    radio4.onclick = check;
+    radio5.onclick = check;
+
+}
+
+function check() {
+    var radios = document.getElementsByName('rate');
+    var value;
+
+    for (var i = 0, len = radios.length; i < len; i++) {
+        if (radios[i].checked) {
+            value = radios[i].value;
+            document.getElementById("feedback").style.visibility = "visible";
+        }
+    }
+}

@@ -5,8 +5,180 @@ main {
 #room {
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
     border-top: 3px solid red;
     border-bottom: 4px solid red;
+    overflow-y: auto;
     word-wrap: break-word;
 }
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #FFFE00;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 999;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #FFFE00;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position:relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 360px;
+    padding-right: 250px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #FFFE00;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #FFFE00;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #FFFE00;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #FFFE00;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #FFFE00;
+  }
+  
+  .border {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+    background: gray;
+}
+
+  .img-gallery {
+    width: 185px;
+    height: 185px;
+  }
+  
+#carouselExample {
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-item 
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }  
+
+
+  .img-gallery img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .path {
+    color: gray;
+    font-size: 20px;
+  }
+
+  .room-heading {
+    background-color: #f44336;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 30px;
+    width: 100%;
+    color: white;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+
+  .room-heading:hover {
+    cursor: pointer;
+    background-color: #FCDAD2;
+    color: #f44336;
+  }

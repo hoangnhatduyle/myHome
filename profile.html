@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile.css">
-    <title>myHOME - Profile</title>
+    <title>Profile</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                         <div class="bottom-border pb-3">
                             <img id="profile-photo" src="assets/images/profile.png" width="50"
                                 class="rounded-circle mr-3">
-                            <a href="#" class="text-white">Nhật Duy</a>
+                            <a href="profile.html" class="text-white">Nhật Duy</a>
                         </div>
                         <ul class="navbar-nav bottom-border flex-column mt-4">
                             <li class="nav-item"><a href="index.html"
@@ -61,9 +61,9 @@
                         <div class="py-4">
                             <div class="text-center">
                                 <p class="text-center text-white pb-2 mb-0">This website is still in development.</p>
-                                <p class="text-center text-white py-2 mb-0">&copy; 2020 Copyright <br> - <br><a
+                                <p class="text-center text-white py-2 mb-0">&copy; 2020 Copyright - <a
                                         href="https://hoangnhatduyle.github.io/portfolio/" target="_blank"
-                                        style="text-decoration: none;">Hoang Nhat Duy Le</a></p>
+                                        style="text-decoration: none;">HNDL</a></p>
                             </div>
                         </div>
                     </div>
@@ -90,9 +90,11 @@
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item mr-2"><button class="button-nav" onclick="openNav()">Menu</button>
                         </li>
-                        <li class="nav-item mr-2"><button class="button-nav">About</button>
+                        <li class="nav-item mr-2"><button class="button-nav" data-toggle="modal"
+                                data-target="#about">About</button>
                         </li>
-                        <li class="nav-item mr-2"><button class="button-nav">Version</button>
+                        <li class="nav-item mr-2"><button class="button-nav" data-toggle="modal"
+                                data-target="#version">Version</button>
                         </li>
                         <li class="nav-item d-flex align-items-center ml-auto"><a href="#" class="nav-link"
                                 data-toggle="modal" data-target="#sign-out"><i
@@ -101,6 +103,80 @@
                 </div>
             </div>
         </nav>
+
+        <!-- modal -->
+        <div class="modal fade" id="sign-out">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Are you sure you want to log out?</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Press logout to leave.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Nope</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, please</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal -->
+
+        <!-- modal -->
+        <div class="modal fade" id="about">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">ABOUT THIS WEBSITE</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        myHOME website is advanced website designed to be completely self-contained with a powerful
+                        property management database, integrated accounting, contact management, work orders, marketing
+                        solutions, and much more. With these diverse capabilities, it will improve your experience when
+                        renting my house.<br><br>
+                        Please help me to rate this website.
+                    </div>
+                    <div class="modal-footer" style="justify-content: flex-start;">
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                        <span id="feedback">Thank you for your feedback!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal -->
+
+        <!-- modal -->
+        <div class="modal fade" id="version">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">VERSIONS</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Version 1.1: Front End designed and finalized for the website.
+                    </div>
+                    <div class="modal-footer" style="justify-content: flex-start;">
+                        Current Version: 1.1
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal -->
 
         <nav id="hide">
             <div class="container-fluid">
@@ -115,7 +191,7 @@
                         <div class="bottom-border pb-3">
                             <img id="profile-photo" src="assets/images/profile.png" width="50"
                                 class="rounded-circle mr-3">
-                            <a href="#" class="text-white">Nhật Duy</a>
+                            <a href="profile.html" class="text-white">Nhật Duy</a>
                         </div>
                         <ul class="navbar-nav bottom-border flex-column mt-4">
                             <li class="nav-item"><a href="index.html" class="nav-link text-white p-3 mb-2"><i
@@ -126,7 +202,7 @@
                             <li class="nav-item"><a href="room.html"
                                     class="nav-link text-white p-3 mb-2 sidebar-link"><i
                                         class="fas fa-door-closed text-light fa-lg mr-3"></i>My Room</a></li>
-                            <li class="nav-item"><a href="document.html"
+                            <li class="nav-item"><a href="documents/HousingContract.pdf" target="_blank"
                                     class="nav-link text-white p-3 mb-2 sidebar-link"><i
                                         class="fas fa-file-alt text-light fa-lg mr-3"></i>Document</a></li>
                             <li class="nav-item"><a href="settings.html"
@@ -169,9 +245,11 @@
                         </div>
                         <div id="info-col" class="col-lg-4">
                             <ul class="navbar-nav flex-row">
-                                <li class="nav-item mr-2"><button class="button-nav">About</button>
+                                <li class="nav-item mr-2"><button class="button-nav" data-toggle="modal"
+                                        data-target="#about">About</button>
                                 </li>
-                                <li class="nav-item mr-2"><button class="button-nav">Version</button>
+                                <li class="nav-item mr-2"><button class="button-nav" data-toggle="modal"
+                                        data-target="#version">Version</button>
                                 </li>
                                 <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link"
                                         data-toggle="modal" data-target="#sign-out"><i
@@ -183,146 +261,115 @@
             </div>
             <!-- end of top-nav -->
 
-            <section id="profile">
-                <div class="container-fluid profile-section px-4">
-                    <h2 id="name">Hoang Nhat Duy Le</h2>
-                    <p class="text-center" id="general-info">Admin/Owner</p>
-                    <div class="row pb-4">
-                        <div class="col-xl-5 d-none d-xl-block">
-                            <div class="slider">
-                                <div class="slides">
-                                    <!--radio buttons start-->
-                                    <input type="radio" name="radio-btn" id="radio1">
-                                    <input type="radio" name="radio-btn" id="radio2">
-                                    <input type="radio" name="radio-btn" id="radio3">
-                                    <input type="radio" name="radio-btn" id="radio4">
-                                    <!--radio buttons end-->
-                                    <!--slide images start-->
-                                    <div class="slide first">
-                                        <img src="assets/images/1.jpg" alt="">
+            <section id="profile" class="d-flex justify-content-center align-items-center">
+                <div class="container emp-profile">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-lg-4 pt-5 pt-lg-0">
+                                <div class="profile-img">
+                                    <img src="assets/images/profile.png" alt="" />
+                                    <div class="file btn btn-lg btn-primary">
+                                        Change Photo
+                                        <input type="file" name="file" />
                                     </div>
-                                    <div class="slide">
-                                        <img src="assets/images/2.jpg" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="assets/images/3.jpg" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="assets/images/4.jpg" alt="">
-                                    </div>
-                                    <!--slide images end-->
-                                    <!--automatic navigation start-->
-                                    <div class="navigation-auto">
-                                        <div class="auto-btn1"></div>
-                                        <div class="auto-btn2"></div>
-                                        <div class="auto-btn3"></div>
-                                        <div class="auto-btn4"></div>
-                                    </div>
-                                    <!--automatic navigation end-->
                                 </div>
-                                <!--manual navigation start-->
-                                <div class="navigation-manual">
-                                    <label for="radio1" class="manual-btn"></label>
-                                    <label for="radio2" class="manual-btn"></label>
-                                    <label for="radio3" class="manual-btn"></label>
-                                    <label for="radio4" class="manual-btn"></label>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="profile-head">
+                                    <h5 class="mb-2 fullName">
+                                        Hoang Nhat Duy Le
+                                    </h5>
+                                    <h6 class="mb-2 memberRole">
+                                        Admin/Owner
+                                    </h6>
+                                    <p class="proile-room mb-3">Room Number : <span>3</span></p>
                                 </div>
-                                <!--manual navigation end-->
+                                <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                            role="tab" aria-controls="home" aria-selected="true">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#info" role="tab"
+                                            aria-controls="profile" aria-selected="false">Timeline</a>
+                                    </li>
+                                </ul>
+                                <div class="col">
+                                    <div class="tab-content profile-tab" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>User Id</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>001</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>Name</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Hoang Nhat Duy Le</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>Email</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>lehoangnhatduy2000@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>Phone</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>419 699 9535</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>Bio</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Explicabo rem quaerat exercitationem accusantium.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="info" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>Start Date</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>mm/dd/yyyy</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>End Date</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p>mm/dd/yyyy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-7 pr-5 mt-4 mt-xl-0 d-flex align-items-center" id="profile-info">
-                            <form action="" class="w-100" style="font-weight: 600;">
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">User ID</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="001">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">Fullname</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="Hoang Nhat Duy Le">
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">Gender</label>
-                                    <div class="col-xl-9">
-                                        <div class="form-check form-check-inline mr-5">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio1" value="option1" checked disabled>
-                                            <label class="form-check-label" for="inlineRadio1">Male</label>
-                                        </div>
-                                        <div class="form-check form-check-inline mr-5">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio2" value="option2" disabled>
-                                            <label class="form-check-label" for="inlineRadio2">Female</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">Email</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="lehoangnhatduy2000@gmail.com">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">Phone</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="xxx - xxx - xxxx">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">Room #</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="3">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">First Day Rent</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="mm/dd/yyyy">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row pl-3">
-                                    <label for="fullname" class="col-xl-3">Last Day Rent</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="fullname" name="fullname" disabled
-                                            placeholder="mm/dd/yyyy">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </section>
         </main>
     </div>
 
     <script src="js/action.js"></script>
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 5000);
-    </script>
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
